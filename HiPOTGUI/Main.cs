@@ -52,6 +52,7 @@ namespace HiPOTGUI
         private static GetMaintenanceStatusDetails[] oMaintenanceStatus = null;
         private static ServiceUtil oServiceUtil = new ServiceUtil();
         private int iTestNumber = 1;
+        private static DateTime dMoveIn;
         #endregion
 
         #region FUNCTION USEFULL
@@ -169,42 +170,45 @@ namespace HiPOTGUI
             {
                 bool resultMoveIn = false;
                 bool resultMoveStd = false;
-                string sPassFail = Cb_PassFail.Text != "" ? Cb_PassFail.Text : "Fail";
+                string sPassFail = Cb_PassFail.Text != "" ? Cb_PassFail.Text : ResultString.False;
                 Camstar.WCF.ObjectStack.DataPointDetails[] cDataPoint = new Camstar.WCF.ObjectStack.DataPointDetails[4];
                 cDataPoint[0] = new Camstar.WCF.ObjectStack.DataPointDetails() { DataName = "Step 1, GND", DataValue = Tb_Step1GND.Text != "" ? Tb_Step1GND.Text : "0", DataType = DataTypeEnum.String };
-                cDataPoint[1] = new Camstar.WCF.ObjectStack.DataPointDetails() { DataName = "Step 2, AC Withstand", DataValue = Tb_Step2ACWithStand.Text != "" ? Tb_Step2ACWithStand.Text : "0", DataType = DataTypeEnum.String };
-                cDataPoint[2] = new Camstar.WCF.ObjectStack.DataPointDetails() { DataName = "Step 3, AC Withstand", DataValue = Tb_Step3ACWithStand.Text != "" ? Tb_Step3ACWithStand.Text : "0", DataType = DataTypeEnum.String };
-                cDataPoint[3] = new Camstar.WCF.ObjectStack.DataPointDetails() { DataName = "Pass/Fail", DataValue = sPassFail, DataType = DataTypeEnum.String };
-                CurrentContainerStatus oContainerStatus = oServiceUtil.GetContainerStatusDetails(Tb_SerialNumber.Text, "HI-POT Data");
+                cDataPoint[1] = new Camstar.WCF.ObjectStack.DataPointDetails() { DataName = "Step 2, Acw 1", DataValue = Tb_Step2ACWithStand.Text != "" ? Tb_Step2ACWithStand.Text : "0", DataType = DataTypeEnum.String };
+                cDataPoint[2] = new Camstar.WCF.ObjectStack.DataPointDetails() { DataName = "Step 3, Acw 2", DataValue = Tb_Step3ACWithStand.Text != "" ? Tb_Step3ACWithStand.Text : "0", DataType = DataTypeEnum.String };
+                cDataPoint[3] = new Camstar.WCF.ObjectStack.DataPointDetails() { DataName = "RESULT", DataValue = sPassFail, DataType = DataTypeEnum.Boolean};
+                CurrentContainerStatus oContainerStatus = oServiceUtil.GetContainerStatusDetails(Tb_SerialNumber.Text, "HI-POT Minime");
                 if (oContainerStatus.ContainerName != null)
                 {
-                    resultMoveIn = oServiceUtil.ExecuteMoveIn(oContainerStatus.ContainerName.Value, this.iTestNumber == 1 ? AppSettings.Resource : "", "", "", null, Cb_Carrier.SelectedValue != null && this.iTestNumber == 1 ? Cb_Carrier.SelectedValue.ToString() : "", true);
+                    resultMoveIn = oServiceUtil.ExecuteMoveIn(oContainerStatus.ContainerName.Value, AppSettings.Resource , "", "", null, Cb_Carrier.SelectedValue != null ? Cb_Carrier.SelectedValue.ToString() : "", true, false, "", "", Convert.ToString(dMoveIn));
                     if (resultMoveIn)
                     {
-                        resultMoveStd = oServiceUtil.ExecuteMoveStd(oContainerStatus.ContainerName.Value, "", this.iTestNumber == 1 ? AppSettings.Resource : "", "HI-POT Data", "", cDataPoint);
+                        Dt_MoveOut.Value = DateTime.Now;
+                        resultMoveStd = oServiceUtil.ExecuteMoveStd(oContainerStatus.ContainerName.Value, "", "", "HI-POT Minime", "", cDataPoint, "", false, "", "", Convert.ToString(DateTime.Now));
                         if (resultMoveStd)
                         {
                             oServiceUtil.ExecuteResourceThruput(this.iTestNumber == 1 ? Cb_Carrier.Text : "",1, "Unit", oContainerStatus.Product.Name.ToString());
-                            oContainerStatus = oServiceUtil.GetContainerStatusDetails(Tb_SerialNumber.Text, "HI-POT Data");
+                            oContainerStatus = oServiceUtil.GetContainerStatusDetails(Tb_SerialNumber.Text, "HI-POT Minime");
                             Tb_ContainerPosition.Text = oServiceUtil.GetCurrentContainerStep(Tb_SerialNumber.Text);
-                            if (sPassFail == "Fail" && this.iTestNumber == 1)
+                            if (oContainerStatus.Operation != null) Tb_Operation.Text = oContainerStatus.Operation.Name.ToString();
+                            if (oContainerStatus.Carrier != null) Cb_Carrier.Text = oContainerStatus.Carrier.Name.ToString();
+                            if (sPassFail == ResultString.False && this.iTestNumber == 1)
                             {
                                 this.iTestNumber = 2;
                                 Bt_Move.Text = "Move In and Move (2)";
                                 MessageBox.Show($"The result Test-1 is Fail and will be perform Test-2.\nMoveIn and MoveStd success! Move to the Operation: {oContainerStatus.OperationName.Value}.");
-                            }else if (sPassFail == "Pass" && this.iTestNumber == 1)
+                            }else if (sPassFail == ResultString.True && this.iTestNumber == 1)
                             {
                                 this.iTestNumber = 1;
                                 Bt_Move.Text = "Move In and Move (1)";
                                 MessageBox.Show($"Test-1 the result is Pass.\nMoveIn and MoveStd success! Move to the Operation: {oContainerStatus.OperationName.Value}.");
                             }
-                            else if(sPassFail == "Pass" && this.iTestNumber == 2)
+                            else if(sPassFail == ResultString.True && this.iTestNumber == 2)
                             {
                                 this.iTestNumber = 1;
                                 Bt_Move.Text = "Move In and Move (1)";
                                 MessageBox.Show($"Test-2 the result is Pass.\nMoveIn and MoveStd success! Move to the Operation: {oContainerStatus.OperationName.Value}.");
                             } 
-                            else if (sPassFail == "Fail" && this.iTestNumber == 2)
+                            else if (sPassFail == ResultString.False && this.iTestNumber == 2)
                             {
                                 this.iTestNumber = 1;
                                 Bt_Move.Text = "Move In and Move (1)";
@@ -273,13 +277,15 @@ namespace HiPOTGUI
         {
             Tb_Operation.Clear();
             Tb_PO.Clear();
-            CurrentContainerStatus oContainerStatus = oServiceUtil.GetContainerStatusDetails(Tb_SerialNumber.Text, "HI-POT Data");
+            CurrentContainerStatus oContainerStatus = oServiceUtil.GetContainerStatusDetails(Tb_SerialNumber.Text, "HI-POT Minime");
             Tb_ContainerPosition.Text = oServiceUtil.GetCurrentContainerStep(Tb_SerialNumber.Text);
             if (oContainerStatus != null)
             {
                 if (oContainerStatus.MfgOrderName != null) Tb_PO.Text = oContainerStatus.MfgOrderName.ToString();
                 if (oContainerStatus.Operation != null) Tb_Operation.Text = oContainerStatus.Operation.Name.ToString();
                 if (oContainerStatus.Carrier != null) Cb_Carrier.Text = oContainerStatus.Carrier.Name.ToString();
+                dMoveIn = DateTime.Now;
+                Dt_MoveIn.Value = dMoveIn;
             }
         }
         private void Dg_Maintenance_CellFormatting(object sender, DataGridViewCellFormattingEventArgs e)

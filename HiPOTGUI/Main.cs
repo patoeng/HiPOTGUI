@@ -189,8 +189,8 @@ namespace HiPOTGUI
                             oServiceUtil.ExecuteResourceThruput(this.iTestNumber == 1 ? Cb_Carrier.Text : "",1, "Unit", oContainerStatus.Product.Name.ToString());
                             oContainerStatus = oServiceUtil.GetContainerStatusDetails(Tb_SerialNumber.Text, "HI-POT Minime");
                             Tb_ContainerPosition.Text = oServiceUtil.GetCurrentContainerStep(Tb_SerialNumber.Text);
-                            if (oContainerStatus.Operation != null) Tb_Operation.Text = oContainerStatus.Operation.Name.ToString();
-                            if (oContainerStatus.Carrier != null) Cb_Carrier.Text = oContainerStatus.Carrier.Name.ToString();
+                            if (oContainerStatus.Operation != null) Tb_Operation.Text = oContainerStatus.Operation.Name;
+                            if (oContainerStatus.Carrier != null) Cb_Carrier.Text = oContainerStatus.Carrier.Name;
                             if (sPassFail == ResultString.False && this.iTestNumber == 1)
                             {
                                 this.iTestNumber = 2;

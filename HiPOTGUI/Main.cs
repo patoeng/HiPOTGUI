@@ -149,7 +149,7 @@ namespace HiPOTGUI
             }
             catch (Exception ex)
             {
-                ex.Source = AppSettings.AssemblyName == ex.Source ? MethodBase.GetCurrentMethod().Name : MethodBase.GetCurrentMethod().Name + "." + ex.Source;
+                ex.Source = AppSettings.AssemblyName == ex.Source ? MethodBase.GetCurrentMethod()?.Name : MethodBase.GetCurrentMethod()?.Name + "." + ex.Source;
                 EventLogUtil.LogErrorEvent(ex.Source, ex);
             }
         }
@@ -171,11 +171,11 @@ namespace HiPOTGUI
                 bool resultMoveIn = false;
                 bool resultMoveStd = false;
                 string sPassFail = Cb_PassFail.Text != "" ? Cb_PassFail.Text : ResultString.False;
-                Camstar.WCF.ObjectStack.DataPointDetails[] cDataPoint = new Camstar.WCF.ObjectStack.DataPointDetails[4];
-                cDataPoint[0] = new Camstar.WCF.ObjectStack.DataPointDetails() { DataName = "Step 1, GND", DataValue = Tb_Step1GND.Text != "" ? Tb_Step1GND.Text : "0", DataType = DataTypeEnum.String };
-                cDataPoint[1] = new Camstar.WCF.ObjectStack.DataPointDetails() { DataName = "Step 2, Acw 1", DataValue = Tb_Step2ACWithStand.Text != "" ? Tb_Step2ACWithStand.Text : "0", DataType = DataTypeEnum.String };
-                cDataPoint[2] = new Camstar.WCF.ObjectStack.DataPointDetails() { DataName = "Step 3, Acw 2", DataValue = Tb_Step3ACWithStand.Text != "" ? Tb_Step3ACWithStand.Text : "0", DataType = DataTypeEnum.String };
-                cDataPoint[3] = new Camstar.WCF.ObjectStack.DataPointDetails() { DataName = "RESULT", DataValue = sPassFail, DataType = DataTypeEnum.Boolean};
+                var cDataPoint = new DataPointDetails[4];
+                cDataPoint[0] = new DataPointDetails() { DataName = "Step 1, GND", DataValue = Tb_Step1GND.Text != "" ? Tb_Step1GND.Text : "0", DataType = DataTypeEnum.String };
+                cDataPoint[1] = new DataPointDetails() { DataName = "Step 2, Acw 1", DataValue = Tb_Step2ACWithStand.Text != "" ? Tb_Step2ACWithStand.Text : "0", DataType = DataTypeEnum.String };
+                cDataPoint[2] = new DataPointDetails() { DataName = "Step 3, Acw 2", DataValue = Tb_Step3ACWithStand.Text != "" ? Tb_Step3ACWithStand.Text : "0", DataType = DataTypeEnum.String };
+                cDataPoint[3] = new DataPointDetails() { DataName = "RESULT", DataValue = sPassFail, DataType = DataTypeEnum.Boolean};
                 CurrentContainerStatus oContainerStatus = oServiceUtil.GetContainerStatusDetails(Tb_SerialNumber.Text, "HI-POT Minime");
                 if (oContainerStatus.ContainerName != null)
                 {
@@ -269,7 +269,7 @@ namespace HiPOTGUI
             }
             catch (Exception ex)
             {
-                ex.Source = AppSettings.AssemblyName == ex.Source ? MethodBase.GetCurrentMethod().Name : MethodBase.GetCurrentMethod().Name + "." + ex.Source;
+                ex.Source = AppSettings.AssemblyName == ex.Source ? MethodBase.GetCurrentMethod()?.Name : MethodBase.GetCurrentMethod()?.Name + "." + ex.Source;
                 EventLogUtil.LogErrorEvent(ex.Source, ex);
             }
         }

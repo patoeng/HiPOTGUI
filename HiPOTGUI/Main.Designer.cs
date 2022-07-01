@@ -134,11 +134,10 @@ namespace HiPOTGUI
             // Dg_Maintenance
             // 
             this.Dg_Maintenance.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.Dg_Maintenance.Location = new System.Drawing.Point(36, 610);
-            this.Dg_Maintenance.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.Dg_Maintenance.Location = new System.Drawing.Point(18, 317);
             this.Dg_Maintenance.Name = "Dg_Maintenance";
             this.Dg_Maintenance.RowHeadersWidth = 51;
-            this.Dg_Maintenance.Size = new System.Drawing.Size(1502, 390);
+            this.Dg_Maintenance.Size = new System.Drawing.Size(751, 203);
             this.Dg_Maintenance.StateCommon.Background.Color1 = System.Drawing.Color.White;
             this.Dg_Maintenance.StateCommon.Background.Color2 = System.Drawing.Color.White;
             this.Dg_Maintenance.StateCommon.Background.GraphicsHint = ComponentFactory.Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
@@ -175,8 +174,7 @@ namespace HiPOTGUI
             // 
             // ResourceSetupGrouping
             // 
-            this.ResourceSetupGrouping.Location = new System.Drawing.Point(36, 369);
-            this.ResourceSetupGrouping.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.ResourceSetupGrouping.Location = new System.Drawing.Point(18, 192);
             this.ResourceSetupGrouping.Name = "ResourceSetupGrouping";
             // 
             // ResourceSetupGrouping.Panel
@@ -188,7 +186,7 @@ namespace HiPOTGUI
             this.ResourceSetupGrouping.Panel.Controls.Add(this.Tb_SetupAvailability);
             this.ResourceSetupGrouping.Panel.Controls.Add(this.label15);
             this.ResourceSetupGrouping.Panel.Controls.Add(this.label14);
-            this.ResourceSetupGrouping.Size = new System.Drawing.Size(1502, 229);
+            this.ResourceSetupGrouping.Size = new System.Drawing.Size(751, 119);
             this.ResourceSetupGrouping.StateCommon.Back.Color1 = System.Drawing.Color.White;
             this.ResourceSetupGrouping.StateCommon.Back.Color2 = System.Drawing.Color.White;
             this.ResourceSetupGrouping.StateCommon.Back.GraphicsHint = ComponentFactory.Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
@@ -212,10 +210,9 @@ namespace HiPOTGUI
             // Cb_StatusCode
             // 
             this.Cb_StatusCode.DropDownWidth = 203;
-            this.Cb_StatusCode.Location = new System.Drawing.Point(12, 81);
-            this.Cb_StatusCode.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.Cb_StatusCode.Location = new System.Drawing.Point(6, 42);
             this.Cb_StatusCode.Name = "Cb_StatusCode";
-            this.Cb_StatusCode.Size = new System.Drawing.Size(338, 49);
+            this.Cb_StatusCode.Size = new System.Drawing.Size(169, 33);
             this.Cb_StatusCode.StateCommon.ComboBox.Border.Color1 = System.Drawing.Color.Black;
             this.Cb_StatusCode.StateCommon.ComboBox.Border.Color2 = System.Drawing.Color.Black;
             this.Cb_StatusCode.StateCommon.ComboBox.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
@@ -245,10 +242,9 @@ namespace HiPOTGUI
             // Cb_StatusReason
             // 
             this.Cb_StatusReason.DropDownWidth = 203;
-            this.Cb_StatusReason.Location = new System.Drawing.Point(362, 81);
-            this.Cb_StatusReason.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.Cb_StatusReason.Location = new System.Drawing.Point(181, 42);
             this.Cb_StatusReason.Name = "Cb_StatusReason";
-            this.Cb_StatusReason.Size = new System.Drawing.Size(430, 49);
+            this.Cb_StatusReason.Size = new System.Drawing.Size(215, 33);
             this.Cb_StatusReason.StateCommon.ComboBox.Border.Color1 = System.Drawing.Color.Black;
             this.Cb_StatusReason.StateCommon.ComboBox.Border.Color2 = System.Drawing.Color.Black;
             this.Cb_StatusReason.StateCommon.ComboBox.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
@@ -277,8 +273,7 @@ namespace HiPOTGUI
             // Bt_SetResourceStatus
             // 
             this.Bt_SetResourceStatus.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Bt_SetResourceStatus.Location = new System.Drawing.Point(1104, 77);
-            this.Bt_SetResourceStatus.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.Bt_SetResourceStatus.Location = new System.Drawing.Point(552, 40);
             this.Bt_SetResourceStatus.Name = "Bt_SetResourceStatus";
             this.Bt_SetResourceStatus.OverrideDefault.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(121)))), ((int)(((byte)(45)))));
             this.Bt_SetResourceStatus.OverrideDefault.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(145)))), ((int)(((byte)(64)))), ((int)(((byte)(4)))));
@@ -293,7 +288,7 @@ namespace HiPOTGUI
             this.Bt_SetResourceStatus.OverrideDefault.Border.Rounding = 20;
             this.Bt_SetResourceStatus.OverrideDefault.Border.Width = 1;
             this.Bt_SetResourceStatus.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.ProfessionalSystem;
-            this.Bt_SetResourceStatus.Size = new System.Drawing.Size(360, 67);
+            this.Bt_SetResourceStatus.Size = new System.Drawing.Size(180, 35);
             this.Bt_SetResourceStatus.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(121)))), ((int)(((byte)(45)))));
             this.Bt_SetResourceStatus.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(145)))), ((int)(((byte)(64)))), ((int)(((byte)(4)))));
             this.Bt_SetResourceStatus.StateCommon.Back.ColorAngle = 45F;
@@ -341,20 +336,18 @@ namespace HiPOTGUI
             this.label16.AutoSize = true;
             this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label16.ForeColor = System.Drawing.Color.Gray;
-            this.label16.Location = new System.Drawing.Point(798, 33);
-            this.label16.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.label16.Location = new System.Drawing.Point(399, 17);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(149, 30);
+            this.label16.Size = new System.Drawing.Size(79, 16);
             this.label16.TabIndex = 34;
             this.label16.Text = "Availability :";
             // 
             // Tb_SetupAvailability
             // 
             this.Tb_SetupAvailability.Enabled = false;
-            this.Tb_SetupAvailability.Location = new System.Drawing.Point(804, 77);
-            this.Tb_SetupAvailability.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.Tb_SetupAvailability.Location = new System.Drawing.Point(402, 40);
             this.Tb_SetupAvailability.Name = "Tb_SetupAvailability";
-            this.Tb_SetupAvailability.Size = new System.Drawing.Size(288, 51);
+            this.Tb_SetupAvailability.Size = new System.Drawing.Size(144, 35);
             this.Tb_SetupAvailability.StateCommon.Back.Color1 = System.Drawing.Color.White;
             this.Tb_SetupAvailability.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.Tb_SetupAvailability.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
@@ -372,10 +365,9 @@ namespace HiPOTGUI
             this.label15.AutoSize = true;
             this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label15.ForeColor = System.Drawing.Color.Gray;
-            this.label15.Location = new System.Drawing.Point(356, 33);
-            this.label15.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.label15.Location = new System.Drawing.Point(178, 17);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(297, 30);
+            this.label15.Size = new System.Drawing.Size(158, 16);
             this.label15.TabIndex = 36;
             this.label15.Text = "Resource Status Reason";
             // 
@@ -384,20 +376,19 @@ namespace HiPOTGUI
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label14.ForeColor = System.Drawing.Color.Gray;
-            this.label14.Location = new System.Drawing.Point(6, 33);
-            this.label14.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.label14.Location = new System.Drawing.Point(3, 17);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(270, 30);
+            this.label14.Size = new System.Drawing.Size(143, 16);
             this.label14.TabIndex = 34;
             this.label14.Text = "Resource Status Code";
             // 
             // Logo
             // 
             this.Logo.Image = global::HiPOTGUI.Properties.Resources.WIK_logo;
-            this.Logo.Location = new System.Drawing.Point(2140, 42);
-            this.Logo.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
+            this.Logo.Location = new System.Drawing.Point(1070, 22);
+            this.Logo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Logo.Name = "Logo";
-            this.Logo.Size = new System.Drawing.Size(216, 83);
+            this.Logo.Size = new System.Drawing.Size(108, 43);
             this.Logo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.Logo.TabIndex = 58;
             this.Logo.TabStop = false;
@@ -407,17 +398,15 @@ namespace HiPOTGUI
             this.MyTitle.AutoSize = true;
             this.MyTitle.Font = new System.Drawing.Font("Segoe UI Black", 20F, System.Drawing.FontStyle.Bold);
             this.MyTitle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(68)))), ((int)(((byte)(101)))));
-            this.MyTitle.Location = new System.Drawing.Point(58, 42);
-            this.MyTitle.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.MyTitle.Location = new System.Drawing.Point(29, 22);
             this.MyTitle.Name = "MyTitle";
-            this.MyTitle.Size = new System.Drawing.Size(200, 72);
+            this.MyTitle.Size = new System.Drawing.Size(103, 37);
             this.MyTitle.TabIndex = 57;
             this.MyTitle.Text = "HiPOT";
             // 
             // ResourceDataGroup
             // 
-            this.ResourceDataGroup.Location = new System.Drawing.Point(1572, 435);
-            this.ResourceDataGroup.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.ResourceDataGroup.Location = new System.Drawing.Point(786, 226);
             this.ResourceDataGroup.Name = "ResourceDataGroup";
             // 
             // ResourceDataGroup.Panel
@@ -437,7 +426,7 @@ namespace HiPOTGUI
             this.ResourceDataGroup.Panel.Controls.Add(this.Tb_Step1GND);
             this.ResourceDataGroup.Panel.Controls.Add(this.label11);
             this.ResourceDataGroup.Panel.Controls.Add(this.Bt_Move);
-            this.ResourceDataGroup.Size = new System.Drawing.Size(802, 646);
+            this.ResourceDataGroup.Size = new System.Drawing.Size(401, 336);
             this.ResourceDataGroup.StateCommon.Back.Color1 = System.Drawing.Color.White;
             this.ResourceDataGroup.StateCommon.Back.Color2 = System.Drawing.Color.White;
             this.ResourceDataGroup.StateCommon.Back.GraphicsHint = ComponentFactory.Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
@@ -463,10 +452,9 @@ namespace HiPOTGUI
             this.label17.AutoSize = true;
             this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label17.ForeColor = System.Drawing.Color.Gray;
-            this.label17.Location = new System.Drawing.Point(380, 396);
-            this.label17.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.label17.Location = new System.Drawing.Point(190, 206);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(288, 30);
+            this.label17.Size = new System.Drawing.Size(149, 16);
             this.label17.TabIndex = 90;
             this.label17.Text = "Move Out: (TimeStamp)";
             // 
@@ -476,12 +464,11 @@ namespace HiPOTGUI
             this.Dt_MoveOut.CustomFormat = "yyyy-MM-dd hh:mm:ss tt";
             this.Dt_MoveOut.Enabled = false;
             this.Dt_MoveOut.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.Dt_MoveOut.Location = new System.Drawing.Point(386, 427);
-            this.Dt_MoveOut.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.Dt_MoveOut.Location = new System.Drawing.Point(193, 222);
             this.Dt_MoveOut.Name = "Dt_MoveOut";
             this.Dt_MoveOut.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.ProfessionalSystem;
             this.Dt_MoveOut.ShowUpDown = true;
-            this.Dt_MoveOut.Size = new System.Drawing.Size(372, 49);
+            this.Dt_MoveOut.Size = new System.Drawing.Size(186, 33);
             this.Dt_MoveOut.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.Dt_MoveOut.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.Dt_MoveOut.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
@@ -497,10 +484,9 @@ namespace HiPOTGUI
             this.label18.AutoSize = true;
             this.label18.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label18.ForeColor = System.Drawing.Color.Gray;
-            this.label18.Location = new System.Drawing.Point(16, 396);
-            this.label18.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.label18.Location = new System.Drawing.Point(8, 206);
             this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(267, 30);
+            this.label18.Size = new System.Drawing.Size(139, 16);
             this.label18.TabIndex = 88;
             this.label18.Text = "Move In: (TimeStamp)";
             // 
@@ -510,12 +496,11 @@ namespace HiPOTGUI
             this.Dt_MoveIn.CustomFormat = "yyyy-MM-dd hh:mm:ss tt";
             this.Dt_MoveIn.Enabled = false;
             this.Dt_MoveIn.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.Dt_MoveIn.Location = new System.Drawing.Point(22, 427);
-            this.Dt_MoveIn.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.Dt_MoveIn.Location = new System.Drawing.Point(11, 222);
             this.Dt_MoveIn.Name = "Dt_MoveIn";
             this.Dt_MoveIn.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.ProfessionalSystem;
             this.Dt_MoveIn.ShowUpDown = true;
-            this.Dt_MoveIn.Size = new System.Drawing.Size(346, 49);
+            this.Dt_MoveIn.Size = new System.Drawing.Size(173, 33);
             this.Dt_MoveIn.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.Dt_MoveIn.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.Dt_MoveIn.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
@@ -532,10 +517,9 @@ namespace HiPOTGUI
             this.Cb_PassFail.Items.AddRange(new object[] {
             "True",
             "False"});
-            this.Cb_PassFail.Location = new System.Drawing.Point(404, 312);
-            this.Cb_PassFail.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.Cb_PassFail.Location = new System.Drawing.Point(202, 162);
             this.Cb_PassFail.Name = "Cb_PassFail";
-            this.Cb_PassFail.Size = new System.Drawing.Size(354, 49);
+            this.Cb_PassFail.Size = new System.Drawing.Size(177, 33);
             this.Cb_PassFail.StateCommon.ComboBox.Border.Color1 = System.Drawing.Color.Black;
             this.Cb_PassFail.StateCommon.ComboBox.Border.Color2 = System.Drawing.Color.Black;
             this.Cb_PassFail.StateCommon.ComboBox.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
@@ -564,10 +548,9 @@ namespace HiPOTGUI
             // Cb_Carrier
             // 
             this.Cb_Carrier.DropDownWidth = 203;
-            this.Cb_Carrier.Location = new System.Drawing.Point(22, 69);
-            this.Cb_Carrier.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.Cb_Carrier.Location = new System.Drawing.Point(11, 36);
             this.Cb_Carrier.Name = "Cb_Carrier";
-            this.Cb_Carrier.Size = new System.Drawing.Size(338, 49);
+            this.Cb_Carrier.Size = new System.Drawing.Size(169, 33);
             this.Cb_Carrier.StateCommon.ComboBox.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.Cb_Carrier.StateCommon.ComboBox.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.Cb_Carrier.StateCommon.ComboBox.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
@@ -598,10 +581,9 @@ namespace HiPOTGUI
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.Color.Gray;
-            this.label9.Location = new System.Drawing.Point(398, 271);
-            this.label9.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.label9.Location = new System.Drawing.Point(199, 141);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(115, 30);
+            this.label9.Size = new System.Drawing.Size(62, 16);
             this.label9.TabIndex = 67;
             this.label9.Text = "RESULT";
             // 
@@ -610,19 +592,17 @@ namespace HiPOTGUI
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.Gray;
-            this.label8.Location = new System.Drawing.Point(16, 271);
-            this.label8.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.label8.Location = new System.Drawing.Point(8, 141);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(257, 30);
+            this.label8.Size = new System.Drawing.Size(132, 16);
             this.label8.TabIndex = 65;
             this.label8.Text = "Step 3, AC Withstand";
             // 
             // Tb_Step3ACWithStand
             // 
-            this.Tb_Step3ACWithStand.Location = new System.Drawing.Point(22, 308);
-            this.Tb_Step3ACWithStand.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.Tb_Step3ACWithStand.Location = new System.Drawing.Point(11, 160);
             this.Tb_Step3ACWithStand.Name = "Tb_Step3ACWithStand";
-            this.Tb_Step3ACWithStand.Size = new System.Drawing.Size(316, 51);
+            this.Tb_Step3ACWithStand.Size = new System.Drawing.Size(158, 35);
             this.Tb_Step3ACWithStand.StateCommon.Back.Color1 = System.Drawing.Color.White;
             this.Tb_Step3ACWithStand.StateCommon.Border.Color1 = System.Drawing.Color.Black;
             this.Tb_Step3ACWithStand.StateCommon.Border.Color2 = System.Drawing.Color.Black;
@@ -640,19 +620,17 @@ namespace HiPOTGUI
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.Gray;
-            this.label6.Location = new System.Drawing.Point(398, 165);
-            this.label6.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.label6.Location = new System.Drawing.Point(199, 86);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(257, 30);
+            this.label6.Size = new System.Drawing.Size(132, 16);
             this.label6.TabIndex = 63;
             this.label6.Text = "Step 2, AC Withstand";
             // 
             // Tb_Step2ACWithStand
             // 
-            this.Tb_Step2ACWithStand.Location = new System.Drawing.Point(404, 204);
-            this.Tb_Step2ACWithStand.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.Tb_Step2ACWithStand.Location = new System.Drawing.Point(202, 106);
             this.Tb_Step2ACWithStand.Name = "Tb_Step2ACWithStand";
-            this.Tb_Step2ACWithStand.Size = new System.Drawing.Size(354, 51);
+            this.Tb_Step2ACWithStand.Size = new System.Drawing.Size(177, 35);
             this.Tb_Step2ACWithStand.StateCommon.Back.Color1 = System.Drawing.Color.White;
             this.Tb_Step2ACWithStand.StateCommon.Border.Color1 = System.Drawing.Color.Black;
             this.Tb_Step2ACWithStand.StateCommon.Border.Color2 = System.Drawing.Color.Black;
@@ -670,19 +648,17 @@ namespace HiPOTGUI
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.Gray;
-            this.label3.Location = new System.Drawing.Point(16, 165);
-            this.label3.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.label3.Location = new System.Drawing.Point(8, 86);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(158, 30);
+            this.label3.Size = new System.Drawing.Size(82, 16);
             this.label3.TabIndex = 61;
             this.label3.Text = "Step 1, GND";
             // 
             // Tb_Step1GND
             // 
-            this.Tb_Step1GND.Location = new System.Drawing.Point(22, 204);
-            this.Tb_Step1GND.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.Tb_Step1GND.Location = new System.Drawing.Point(11, 106);
             this.Tb_Step1GND.Name = "Tb_Step1GND";
-            this.Tb_Step1GND.Size = new System.Drawing.Size(316, 51);
+            this.Tb_Step1GND.Size = new System.Drawing.Size(158, 35);
             this.Tb_Step1GND.StateCommon.Back.Color1 = System.Drawing.Color.White;
             this.Tb_Step1GND.StateCommon.Border.Color1 = System.Drawing.Color.Black;
             this.Tb_Step1GND.StateCommon.Border.Color2 = System.Drawing.Color.Black;
@@ -700,18 +676,17 @@ namespace HiPOTGUI
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.ForeColor = System.Drawing.Color.Gray;
-            this.label11.Location = new System.Drawing.Point(16, 15);
-            this.label11.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.label11.Location = new System.Drawing.Point(8, 8);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(93, 30);
+            this.label11.Size = new System.Drawing.Size(48, 16);
             this.label11.TabIndex = 59;
             this.label11.Text = "Carrier";
             // 
             // Bt_Move
             // 
             this.Bt_Move.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Bt_Move.Location = new System.Drawing.Point(426, 517);
-            this.Bt_Move.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
+            this.Bt_Move.Location = new System.Drawing.Point(213, 269);
+            this.Bt_Move.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Bt_Move.Name = "Bt_Move";
             this.Bt_Move.OverrideDefault.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(184)))), ((int)(((byte)(116)))));
             this.Bt_Move.OverrideDefault.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(143)))), ((int)(((byte)(81)))));
@@ -726,7 +701,7 @@ namespace HiPOTGUI
             this.Bt_Move.OverrideDefault.Border.Rounding = 20;
             this.Bt_Move.OverrideDefault.Border.Width = 1;
             this.Bt_Move.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.ProfessionalSystem;
-            this.Bt_Move.Size = new System.Drawing.Size(332, 67);
+            this.Bt_Move.Size = new System.Drawing.Size(166, 35);
             this.Bt_Move.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(184)))), ((int)(((byte)(116)))));
             this.Bt_Move.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(143)))), ((int)(((byte)(81)))));
             this.Bt_Move.StateCommon.Back.ColorAngle = 45F;
@@ -774,19 +749,19 @@ namespace HiPOTGUI
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.Gray;
-            this.label7.Location = new System.Drawing.Point(1574, 137);
-            this.label7.Margin = new System.Windows.Forms.Padding(8, 0, 8, 0);
+            this.label7.Location = new System.Drawing.Point(787, 71);
+            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(245, 30);
+            this.label7.Size = new System.Drawing.Size(126, 16);
             this.label7.TabIndex = 59;
             this.label7.Text = "Serial Number Unit :";
             // 
             // Tb_SerialNumber
             // 
-            this.Tb_SerialNumber.Location = new System.Drawing.Point(1572, 175);
-            this.Tb_SerialNumber.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
+            this.Tb_SerialNumber.Location = new System.Drawing.Point(786, 91);
+            this.Tb_SerialNumber.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Tb_SerialNumber.Name = "Tb_SerialNumber";
-            this.Tb_SerialNumber.Size = new System.Drawing.Size(476, 51);
+            this.Tb_SerialNumber.Size = new System.Drawing.Size(238, 35);
             this.Tb_SerialNumber.StateCommon.Back.Color1 = System.Drawing.Color.White;
             this.Tb_SerialNumber.StateCommon.Border.Color1 = System.Drawing.Color.Black;
             this.Tb_SerialNumber.StateCommon.Border.Color2 = System.Drawing.Color.Black;
@@ -810,20 +785,18 @@ namespace HiPOTGUI
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.Gray;
-            this.label4.Location = new System.Drawing.Point(1574, 250);
-            this.label4.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.label4.Location = new System.Drawing.Point(787, 130);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(139, 30);
+            this.label4.Size = new System.Drawing.Size(73, 16);
             this.label4.TabIndex = 64;
             this.label4.Text = "Operation :";
             // 
             // Tb_Operation
             // 
             this.Tb_Operation.Enabled = false;
-            this.Tb_Operation.Location = new System.Drawing.Point(1580, 294);
-            this.Tb_Operation.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.Tb_Operation.Location = new System.Drawing.Point(790, 153);
             this.Tb_Operation.Name = "Tb_Operation";
-            this.Tb_Operation.Size = new System.Drawing.Size(340, 51);
+            this.Tb_Operation.Size = new System.Drawing.Size(170, 35);
             this.Tb_Operation.StateCommon.Back.Color1 = System.Drawing.Color.White;
             this.Tb_Operation.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.Tb_Operation.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
@@ -841,20 +814,18 @@ namespace HiPOTGUI
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Gray;
-            this.label2.Location = new System.Drawing.Point(1574, 392);
-            this.label2.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.label2.Location = new System.Drawing.Point(787, 204);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(215, 30);
+            this.label2.Size = new System.Drawing.Size(112, 16);
             this.label2.TabIndex = 66;
             this.label2.Text = "Production Order:";
             // 
             // Tb_PO
             // 
             this.Tb_PO.Enabled = false;
-            this.Tb_PO.Location = new System.Drawing.Point(1932, 369);
-            this.Tb_PO.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.Tb_PO.Location = new System.Drawing.Point(966, 192);
             this.Tb_PO.Name = "Tb_PO";
-            this.Tb_PO.Size = new System.Drawing.Size(444, 51);
+            this.Tb_PO.Size = new System.Drawing.Size(222, 35);
             this.Tb_PO.StateCommon.Back.Color1 = System.Drawing.Color.White;
             this.Tb_PO.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.Tb_PO.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
@@ -870,10 +841,9 @@ namespace HiPOTGUI
             // Tb_ContainerPosition
             // 
             this.Tb_ContainerPosition.Enabled = false;
-            this.Tb_ContainerPosition.Location = new System.Drawing.Point(1932, 294);
-            this.Tb_ContainerPosition.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.Tb_ContainerPosition.Location = new System.Drawing.Point(966, 153);
             this.Tb_ContainerPosition.Name = "Tb_ContainerPosition";
-            this.Tb_ContainerPosition.Size = new System.Drawing.Size(444, 51);
+            this.Tb_ContainerPosition.Size = new System.Drawing.Size(222, 35);
             this.Tb_ContainerPosition.StateCommon.Back.Color1 = System.Drawing.Color.White;
             this.Tb_ContainerPosition.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.Tb_ContainerPosition.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
@@ -891,18 +861,17 @@ namespace HiPOTGUI
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.Color.Gray;
-            this.label10.Location = new System.Drawing.Point(1926, 258);
-            this.label10.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.label10.Location = new System.Drawing.Point(963, 134);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(236, 30);
+            this.label10.Size = new System.Drawing.Size(122, 16);
             this.label10.TabIndex = 68;
             this.label10.Text = "Container Position :";
             // 
             // Bt_FindContainer
             // 
             this.Bt_FindContainer.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Bt_FindContainer.Location = new System.Drawing.Point(2086, 162);
-            this.Bt_FindContainer.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
+            this.Bt_FindContainer.Location = new System.Drawing.Point(1043, 84);
+            this.Bt_FindContainer.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Bt_FindContainer.Name = "Bt_FindContainer";
             this.Bt_FindContainer.OverrideDefault.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(174)))), ((int)(((byte)(244)))));
             this.Bt_FindContainer.OverrideDefault.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(142)))), ((int)(((byte)(254)))));
@@ -917,7 +886,7 @@ namespace HiPOTGUI
             this.Bt_FindContainer.OverrideDefault.Border.Rounding = 20;
             this.Bt_FindContainer.OverrideDefault.Border.Width = 1;
             this.Bt_FindContainer.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.ProfessionalSystem;
-            this.Bt_FindContainer.Size = new System.Drawing.Size(288, 73);
+            this.Bt_FindContainer.Size = new System.Drawing.Size(144, 38);
             this.Bt_FindContainer.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(174)))), ((int)(((byte)(244)))));
             this.Bt_FindContainer.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(142)))), ((int)(((byte)(254)))));
             this.Bt_FindContainer.StateCommon.Back.ColorAngle = 45F;
@@ -965,10 +934,9 @@ namespace HiPOTGUI
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.Gray;
-            this.label5.Location = new System.Drawing.Point(418, 25);
-            this.label5.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.label5.Location = new System.Drawing.Point(209, 13);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(194, 30);
+            this.label5.Size = new System.Drawing.Size(102, 16);
             this.label5.TabIndex = 26;
             this.label5.Text = "Status Reason :";
             // 
@@ -977,10 +945,9 @@ namespace HiPOTGUI
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Gray;
-            this.label1.Location = new System.Drawing.Point(34, 25);
-            this.label1.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.label1.Location = new System.Drawing.Point(17, 13);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(167, 30);
+            this.label1.Size = new System.Drawing.Size(87, 16);
             this.label1.TabIndex = 27;
             this.label1.Text = "Status Code :";
             // 
@@ -989,10 +956,9 @@ namespace HiPOTGUI
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label12.ForeColor = System.Drawing.Color.Gray;
-            this.label12.Location = new System.Drawing.Point(1100, 25);
-            this.label12.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.label12.Location = new System.Drawing.Point(550, 13);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(149, 30);
+            this.label12.Size = new System.Drawing.Size(79, 16);
             this.label12.TabIndex = 28;
             this.label12.Text = "Availability :";
             // 
@@ -1001,26 +967,23 @@ namespace HiPOTGUI
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label13.ForeColor = System.Drawing.Color.Gray;
-            this.label13.Location = new System.Drawing.Point(818, 25);
-            this.label13.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.label13.Location = new System.Drawing.Point(409, 13);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(192, 30);
+            this.label13.Size = new System.Drawing.Size(99, 16);
             this.label13.TabIndex = 29;
             this.label13.Text = "Time at Status :";
             // 
             // Pb_IndicatorPicture
             // 
-            this.Pb_IndicatorPicture.Location = new System.Drawing.Point(1382, 79);
-            this.Pb_IndicatorPicture.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.Pb_IndicatorPicture.Location = new System.Drawing.Point(691, 41);
             this.Pb_IndicatorPicture.Name = "Pb_IndicatorPicture";
-            this.Pb_IndicatorPicture.Size = new System.Drawing.Size(56, 50);
+            this.Pb_IndicatorPicture.Size = new System.Drawing.Size(28, 26);
             this.Pb_IndicatorPicture.TabIndex = 33;
             this.Pb_IndicatorPicture.TabStop = false;
             // 
             // ResourceGrouping
             // 
-            this.ResourceGrouping.Location = new System.Drawing.Point(24, 137);
-            this.ResourceGrouping.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.ResourceGrouping.Location = new System.Drawing.Point(12, 71);
             this.ResourceGrouping.Name = "ResourceGrouping";
             // 
             // ResourceGrouping.Panel
@@ -1034,7 +997,7 @@ namespace HiPOTGUI
             this.ResourceGrouping.Panel.Controls.Add(this.label12);
             this.ResourceGrouping.Panel.Controls.Add(this.label1);
             this.ResourceGrouping.Panel.Controls.Add(this.label5);
-            this.ResourceGrouping.Size = new System.Drawing.Size(1502, 223);
+            this.ResourceGrouping.Size = new System.Drawing.Size(751, 116);
             this.ResourceGrouping.StateCommon.Back.Color1 = System.Drawing.Color.White;
             this.ResourceGrouping.StateCommon.Back.Color2 = System.Drawing.Color.White;
             this.ResourceGrouping.StateCommon.Back.GraphicsHint = ComponentFactory.Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
@@ -1058,10 +1021,9 @@ namespace HiPOTGUI
             // Tb_Availability
             // 
             this.Tb_Availability.Enabled = false;
-            this.Tb_Availability.Location = new System.Drawing.Point(1106, 75);
-            this.Tb_Availability.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.Tb_Availability.Location = new System.Drawing.Point(553, 39);
             this.Tb_Availability.Name = "Tb_Availability";
-            this.Tb_Availability.Size = new System.Drawing.Size(264, 51);
+            this.Tb_Availability.Size = new System.Drawing.Size(132, 35);
             this.Tb_Availability.StateCommon.Back.Color1 = System.Drawing.Color.White;
             this.Tb_Availability.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.Tb_Availability.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
@@ -1077,10 +1039,9 @@ namespace HiPOTGUI
             // Tb_TimeAtStatus
             // 
             this.Tb_TimeAtStatus.Enabled = false;
-            this.Tb_TimeAtStatus.Location = new System.Drawing.Point(824, 75);
-            this.Tb_TimeAtStatus.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.Tb_TimeAtStatus.Location = new System.Drawing.Point(412, 39);
             this.Tb_TimeAtStatus.Name = "Tb_TimeAtStatus";
-            this.Tb_TimeAtStatus.Size = new System.Drawing.Size(270, 51);
+            this.Tb_TimeAtStatus.Size = new System.Drawing.Size(135, 35);
             this.Tb_TimeAtStatus.StateCommon.Back.Color1 = System.Drawing.Color.White;
             this.Tb_TimeAtStatus.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.Tb_TimeAtStatus.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
@@ -1096,10 +1057,9 @@ namespace HiPOTGUI
             // Tb_StatusCode
             // 
             this.Tb_StatusCode.Enabled = false;
-            this.Tb_StatusCode.Location = new System.Drawing.Point(40, 75);
-            this.Tb_StatusCode.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.Tb_StatusCode.Location = new System.Drawing.Point(20, 39);
             this.Tb_StatusCode.Name = "Tb_StatusCode";
-            this.Tb_StatusCode.Size = new System.Drawing.Size(372, 51);
+            this.Tb_StatusCode.Size = new System.Drawing.Size(186, 35);
             this.Tb_StatusCode.StateCommon.Back.Color1 = System.Drawing.Color.White;
             this.Tb_StatusCode.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.Tb_StatusCode.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
@@ -1115,10 +1075,9 @@ namespace HiPOTGUI
             // Tb_StatusReason
             // 
             this.Tb_StatusReason.Enabled = false;
-            this.Tb_StatusReason.Location = new System.Drawing.Point(424, 75);
-            this.Tb_StatusReason.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.Tb_StatusReason.Location = new System.Drawing.Point(212, 39);
             this.Tb_StatusReason.Name = "Tb_StatusReason";
-            this.Tb_StatusReason.Size = new System.Drawing.Size(388, 51);
+            this.Tb_StatusReason.Size = new System.Drawing.Size(194, 35);
             this.Tb_StatusReason.StateCommon.Back.Color1 = System.Drawing.Color.White;
             this.Tb_StatusReason.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.Tb_StatusReason.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
@@ -1133,10 +1092,10 @@ namespace HiPOTGUI
             // 
             // Main
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(252)))), ((int)(((byte)(252)))));
-            this.ClientSize = new System.Drawing.Size(2380, 1104);
+            this.ClientSize = new System.Drawing.Size(1006, 552);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.Tb_ContainerPosition);
             this.Controls.Add(this.label2);
@@ -1152,7 +1111,7 @@ namespace HiPOTGUI
             this.Controls.Add(this.ResourceGrouping);
             this.Controls.Add(this.Logo);
             this.Controls.Add(this.MyTitle);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Main";
             this.Palette = this.HiPOTPalette;
             this.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.Custom;

@@ -38,7 +38,7 @@ namespace HiPOTGUI
             Cb_StatusReason.SelectedItem = null;
             Tb_SetupAvailability.Text = "";
 
-            this.WindowState = FormWindowState.Normal;
+            this.WindowState = FormWindowState.Maximized;
             this.Size = new Size(1250, 630);
             MyTitle.Text = $"HiPOT - {AppSettings.Resource}";
             ResourceGrouping.Values.Heading = $"Resource Status: {AppSettings.Resource}";
